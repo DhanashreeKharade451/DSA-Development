@@ -1,12 +1,13 @@
-package OOPs.Classes;
 
 public class abstraction {
     public static void main(String args[]) {
+        Mustang MyHorse = new Mustang();
 
-        Horse h = new Horse();
-        h.eat();
-        h.walk();
-        System.out.println(h.color);
+        // Horse h = new Horse();
+        // h.eat();
+        // h.walk();
+        // System.out.println(h.color);
+        // h.changeColor();
 
         // Chicken c = new Chicken();
         // c.eat();
@@ -20,8 +21,9 @@ abstract class Animal {
 
     Animal() {
 
-        color = "yellow";
-        System.out.println("Constructor called, color = " + color);
+        // color = "yellow";
+        System.out.println("Animal constructor called");
+
     }
 
     void eat() {
@@ -33,6 +35,10 @@ abstract class Animal {
 
 class Horse extends Animal {
 
+    Horse() {
+        System.out.println("Horse constructor called");
+    }
+
     void changeColor() {
         color = "red";
     }
@@ -40,6 +46,12 @@ class Horse extends Animal {
     void walk() {
         System.out.println("walk on 4 legs"); // impliment abstract method from parent class
 
+    }
+}
+
+class Mustang extends Horse {
+    Mustang() {
+        System.out.println("Mustang constructor called");
     }
 }
 
