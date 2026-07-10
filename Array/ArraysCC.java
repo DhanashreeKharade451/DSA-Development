@@ -1,5 +1,6 @@
 package Array;
 
+//Linear search
 import java.util.*;
 
 public class ArraysCC {
