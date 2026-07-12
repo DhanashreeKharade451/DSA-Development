@@ -37,3 +37,5 @@ class trappedRainwater {
         System.out.println(trappedRainwater(height));
     }
 }
+
+// time complexity O(n)
