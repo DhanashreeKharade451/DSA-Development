@@ -15,5 +15,9 @@ public class sortArraylist {
         System.out.println(list);
         Collections.sort(list);
         System.out.println(list);
+
+        // descending
+        Collections.sort(list, Collections.reverseOrder());
+        System.out.println(list);
     }
 }
